@@ -1,2 +1,2 @@
-# tatkaal.v.1.0
+# tatkaal.v1.0
 First version of tatkaal prototype application
