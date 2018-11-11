@@ -1,0 +1,347 @@
+
+body {font-family: Verdana, sans-serif; margin:0;overflow-x: hidden;}
+
+img {vertical-align: middle;}
+
+.header{
+    background-color: #333;
+    position: fixed;
+    z-index: 100;
+    height: 50px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header ul li {
+    float: right;
+}
+
+.header ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+}
+
+.header ul li a:hover {
+    background-color: #111;
+}
+.img1{
+height: 660px;
+}
+
+.main-container{
+ background-color: grey; 
+}
+/* Slideshow container */
+.slideshow-container {
+    /*width: 1370px;
+  position: relative;*/
+}
+
+/*.black-layer{
+  background-color: black;
+  opacity:0.3;
+  height:600px;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+}
+*/
+#nav {
+	list-style-type: none;
+	z-index: 150;
+}
+
+#nav li a {
+	display: block;
+	width: 58px;
+	height: 105px;
+  top:300px;
+	text-indent: -9999px;
+	outline: none;
+}
+
+#prev a {
+	background: url(../images/prev.png);
+position: absolute;
+z-index: 3;
+left: 3%;
+}
+
+#next a {
+	background: url(../images/next.png);
+	position: absolute;
+  z-index: 3;
+right: 2%;
+}
+
+#next a:hover {
+	background: url(../images/next_hover.png);
+}
+
+#prev a:hover {
+	background: url(../images/prev_hover.png);
+}
+
+.small{
+  background-color: white;
+  position: absolute;
+  margin-left: 14%;
+  /*margin-right: 25%;*/
+  margin-top: 4%;
+  width: 1080px;
+  height:590px;
+  z-index:3;
+  opacity:0.66;
+}
+
+.problem{
+  width: 50%;
+  height: inherit;
+  float: left;
+  background-color: #333;
+}
+.overlay1{  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.problem:hover .overlay1 {
+  width: 50%;
+  left: 0;
+  display: block;
+}
+
+
+/*#tab1 input[type=text] {
+      padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    background: #f1f1f1;
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}*/
+.btn1{
+  float: left;
+    width: 20%;
+    padding: 11px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+/* When the input field gets focus, change its width to 100% */
+/*#tab1 input[type=text]:focus {
+    width: 50%;
+}*/
+.btn1:hover {
+    background: #0b7dda;
+}
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+#inneroverlay2{
+  background-color: #ffffff;
+  margin: 50px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+/* Style the input fields */
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+/*.tab {
+  display: none;
+}
+*/
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+ 
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+.solution{
+  width: 50%;
+  height: inherit;
+  float: right;
+  background-color:#f2f2f2;
+}
+.overlay2{    position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;}
+
+.solution:hover .overlay2 {
+  width: 50%;
+  display: block;
+}
+
+/*css for making cloud formation*/
+.make_cloud{
+  display: block;
+}
+
+.c1,.c2,.c3,.c4{
+  position: absolute;
+  z-index: 6;
+  border-radius: 50%;
+  background-color: white;
+  height: 50px;
+  width: 50px;
+}
+.c1{
+   margin-top: 75px;
+  margin-left: 670px;
+}
+.c2{
+   margin-top: 50px;
+  margin-left: 700px;
+}
+.c3{
+   margin-top: 75px;
+  margin-left: 730px;
+  
+}
+.c4{
+   margin-top: 95px;
+  margin-left: 700px;
+}
+.ihave{
+  position: absolute;
+  z-index: 6;
+  margin-top: 26px;
+  margin-left: 685px;
+  color: grey;
+}
+.ihave p{
+font-size: 45px;
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 90px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 10px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+  background-color:red;
+}
+.dots{
+  margin-top:-10px;
+  margin-left:30px;
+}
+
+.active{
+background-color:red;}
+
+/* Fading animation */
+.fades{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+footer{
+  height: 300px;
+  width:100%;
+  background-color: grey;
+  margin:0;
+}
